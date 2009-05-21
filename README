@@ -1,0 +1,9 @@
+To compile you need to do the following
+	sudo apt-get install build-essential libwxbase-2.8-dev libwxgtk-2.8-dev
+	make
+
+Then run the program ./ima
+
+If you have problems try
+	sudo update-alternatives --config wx-config
+	
