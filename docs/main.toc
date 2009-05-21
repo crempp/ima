@@ -1,0 +1,10 @@
+\contentsline {chapter}{\numberline {1}Foundations}{5}
+\contentsline {section}{\numberline {1.1}Topology and Measures}{5}
+\contentsline {section}{\numberline {1.2}$\mathbf {L}^p$ Spaces}{6}
+\contentsline {chapter}{\numberline {2}The Convolution and Correlation}{7}
+\contentsline {section}{\numberline {2.1}One-Dimensional Convolution}{7}
+\contentsline {section}{\numberline {2.2}Two-Dimensional Convolution}{10}
+\contentsline {section}{\numberline {2.3}Discrete Convolution}{10}
+\contentsline {section}{\numberline {2.4}Convolution Implementation}{11}
+\contentsline {section}{\numberline {2.5}One-Dimensional Correlation}{11}
+\contentsline {chapter}{\numberline {A}Test appendix}{13}

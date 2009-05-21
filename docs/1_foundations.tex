@@ -1,0 +1,91 @@
+\chapter{Foundations}
+	In the development of image analysis there are many theorems that depend on real and complex analysis. This section presents the required material but does not prove any theorems or explain them in detail. For a deeper understanding of these concepts see the cited references.
+	
+\section{Topology and Measures}\label{measures}
+	These come from Rudin \cite{rudin_1}.
+\begin{comment}
+Introduce topology.
+\begin{dfn}\index{topology}
+	A collection $\tau$ of subsets of a set $X$ is a \emph{topology} in $X$ if $\tau$ has the following properties:
+	\begin{enumerate}
+	\item $\emptyset\in\tau$ and $X\in\tau$.
+	\item if $V_i\in\tau$ for $i=1,\ldots,n$, then $V_1\cap\cdots\cap V_n\in\tau$.
+	\item If $\{V_\alpha\}$ is an arbitrary collection of members of $\tau$, then $\bigcup_\alpha V_\alpha\in\tau$.
+	\end{enumerate}
+\end{dfn}
+\begin{dfn}\index{$\sigma$-algegra}
+	A collection $\mathfrak{M}$ of subsets of $X$ is a \emph{$\sigma$-algegra} if $\mathfrak{M}$ has the following properties in $X$:
+	\begin{enumerate}
+	\item $X\in\mathfrak{M}$.
+	\item If $A\in\mathfrak{M}$ then $A^C\in\mathfrak{M}$ where $A^C$ is the complement of $A$ in $X$.
+	\item If $A=\cup_{n=1}^\infty A_n$ for $n=1,2,\ldots$ and $A\in\mathfrak{M}$ then $A\in\mathfrak{M}$
+	\end{enumerate}
+\end{dfn}
+\end{comment}
+	Measure theory provides the notion of length, area and volume of sets. This is necessary for the formal definitions of integrals.
+\begin{dfn}\index{measure!measurable space}
+	If $\mathfrak{M}$ is a $\sigma$-algegra in $X$, then $X$ is a \emph{measurable space}. The members of $\mathfrak{M}$ are the \emph{measurable sets} in $X$.
+\end{dfn}
+\begin{dfn}\index{measure!measurable}
+	If $X$ is a measurable space, $Y$ is a topological space and $f:X\rightarrow Y$ then $f$ is \emph{measurable} if $f^{-1}(V)$ is measurable in $X$ for every open set $V$ in $Y$.
+\end{dfn}
+\begin{dfn}\index{countably additive}
+	A function $\mu$ defined on a $\sigma$-algebra $\mathfrak{M}$ is \emph{countably additive} means that if $\{A_i\}$ is a disjoint countable collection of members of $\mathfrak{M}$ then
+	\begin{equation*}
+		\mu(\bigcup_{i=1}^\infty A_i)=\sum_{i=1}^\infty\mu(A_i).
+	\end{equation*}
+\end{dfn}
+\begin{dfn}\index{measure!positive measure}\index{measure!measure}
+	A \emph{positive measure} (measure) is a function $\mu$, defined on a $\sigma$-algebra $\mathfrak{M}$, whose range is in $[0,\infty]$ and which is countably additive.
+\end{dfn}
+\begin{dfn}\index{measure!measure space}
+	A \emph{measure space} is a measurable space which has a positive measure defined on the $\sigma$-algebra of its measurable sets.
+\end{dfn}
+\begin{comment}
+A set is Lebesque measurable if it can be assigned a volume.
+\begin{dfn}\index{Lebesgue measurable}
+	See \cite{rudin_1} p. 53
+\end{dfn}
+\begin{dfn}\index{Lebesgue measure}
+	See \cite{rudin_1} p. 53
+\end{dfn}
+
+\section{$L^p$ Spaces}
+\begin{dfn}\index{$L^p$ norm}
+	If $X$ is an arbitrary measure space with positve measure $\mu$
+\end
+\begin{dfn}\index{$L^p$ norm}
+	
+\end
+\end{comment}
+
+%-----L^p Spaces----------------------------------------------------------------
+\section{$\mathbf{L}^p$ Spaces}
+
+A $\mathbf{L^p}$ space is a normed vector space(?).
+\begin{dfn}\index{$\mathbf{L}^p$-norm}
+	Let $(X,\mathfrak{M},\mu)$ be a measure space and $0<p<\infty$. The $\mathbf{L}^p$-norm of a function $f:X\rightarrow\mathbb{R}$ is defined as:
+	\begin{equation*}
+		\|f\|_p=\left(\int_X|f|^pd\mu\right)^{1/p}
+	\end{equation*}
+\end{dfn}
+
+\begin{dfn}[$\mathbf{L}^p$ Space]\cite{jones_1}
+	
+	Let $1\leq p<\infty$ and $f:X\rightarrow\mathbb{R}$ then the set of functions:
+	\begin{equation*}
+		\mathbf{L}^p=\{f:\mathbf{L^p}\int_X|f|^p d\mu<\infty\}
+	\end{equation*}
+	is a vector space called the \emph{$\mathbf{L}^p$ space}.
+\end{dfn}
+
+\begin{comment}
+The following properties are valid. (prove these)
+\begin{enumerate}
+\item $0\leq\|f\|_P<\infty$
+\item $\|f\|_P=0\text{ iff }f=0$
+\item $\|cf\|_P=|c| \|f\|_P\text{ if }c\in\mathbb{R}$
+\item $\|f+g\|_P\leq\|f\|_P+\|g\|_P$
+\end{enumerate}
+\end{comment}
+

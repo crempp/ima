@@ -1,0 +1,7 @@
+#!/bin/bash
+latex main.tex
+bibtex main.aux
+makeindex main.idx
+latex main.tex
+latex main.tex
+
