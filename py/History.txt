@@ -1,0 +1,5 @@
+10-14-2008 - All the gradients are threaded. Started work on gradient direction code. Added Gaussian smoothing (needs to be faster). Began Canny E-D.
+
+10-12-2008 - Made the GUI look nicer. Finished implementing gradients (Prewitt, Sobel, Scharr, Laplacian, Kirsh). Implemented Undo. Started adding threading support (works for Roberts Cross and Kirsch).
+
+10-05-2008 - Initial GUI design. Implemented Roberts Cross and Blur.
